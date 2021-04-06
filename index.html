@@ -16,11 +16,25 @@
       font-family: 'Montserrat', sans-serif;
     }
 
+    html,
     body {
-      background: url('https://i.imgur.com/9alLRUJ.png');
-      background-size: auto;
-      background-repeat: repeat;
+      height: 100%;
+    }
+
+    html {
+      overflow-y: hidden;
       overflow-x: hidden;
+    }
+
+    body {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background-image: url('https://pbielanin.pl/images/background-purple.jpg');
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       color: white;
     }
   </style>
