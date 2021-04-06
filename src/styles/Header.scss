@@ -1,0 +1,19 @@
+.header{
+    width: 100vw;
+    height: calc(10vh - 20px);
+    text-align: center;
+    padding-top: 20px;
+
+    p{
+        color: rgba(255, 255, 255, 0.383);
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        span{
+            color: #d821a8;
+        }
+    }
+}

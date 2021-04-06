@@ -1,0 +1,57 @@
+[v-cloak] {display: none}
+.searchBar{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    input{
+        border: 0;
+        border-bottom: 2px solid white;
+        background: transparent;
+        transition: border-color 0.3s;
+        outline: none;
+        color: white;
+        padding: 7px 0;
+        width: 25%;
+
+
+        &:focus{
+            border-color: rgb(255, 0, 170);
+        }
+    }
+
+    span{
+        margin-left: 20px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .searchMovies{
+        width: auto;
+        height: auto;
+        z-index: 999;
+        position: absolute;
+        top: 20vh;
+        margin: auto;
+        background-color: #170036e0;
+        .movieResult{
+            width:50%;
+            overflow: auto;
+            background-color: #170036;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+    }
+
+}

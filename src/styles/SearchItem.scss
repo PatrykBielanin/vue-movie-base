@@ -1,0 +1,25 @@
+.movie{
+    border-bottom: .5px solid #360080;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    img{
+        width: 5%;
+    }
+
+    p{
+        padding: 5px;
+        transition: color .2s;
+
+        &:hover{
+            color: #d821a8;
+        }
+    }
+
+    .date{
+        color: gray;
+    }
+}

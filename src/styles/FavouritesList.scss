@@ -1,0 +1,70 @@
+[v-cloak] {display: none}
+span{
+    transition: color .5s;
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.starFav{
+    margin-left: 20px;
+    &:hover{
+        color: gold;
+    }
+}
+
+.closeFav{
+    &:hover{
+        color: pink;
+    }
+}
+
+.favourites{
+    width: 30%;
+    z-index: 499;
+    position: absolute;
+    top: 20vh;
+    margin: auto;
+    background-color: #170036;
+    border: .5px solid #360080;
+    padding: 20px;
+    text-align: left;
+
+    p{
+        margin: 5px;
+        color: gray;
+    }
+
+    li{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        border-bottom: .5px solid #360080;
+
+        span{
+            font-size: 16px;
+            color: red;
+            margin-left: 20px;
+
+            &:hover{
+                cursor: pointer;
+
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        img{
+            width: 5%;
+            margin-right: 10px;
+        }
+    }
+}

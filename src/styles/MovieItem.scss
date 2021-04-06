@@ -1,0 +1,53 @@
+[v-cloak] {display: none}
+
+.movieItem{
+    width: 19.5%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, 0);
+    transition: border .5s;
+    margin-top: 10px;
+
+    &:hover{
+        border: 3px solid #d821a79d;
+    }
+
+    img{
+        width: 100%;
+        transition: opacity .5s;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+
+    .movieInfo{
+        padding: 5px;
+        color: rgb(240, 240, 240);
+        width: calc(100% - 11.5px);
+        height: auto;
+        background-color: #2b006675;
+        border: 1px solid rgba(0, 0, 0, 0);
+
+        p{
+            float: right;
+            padding: 5px;
+            background-color: #170036;
+            border: none;
+            border-radius: 5px;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        .yellow{
+            color: orange;
+        }
+    }
+}
