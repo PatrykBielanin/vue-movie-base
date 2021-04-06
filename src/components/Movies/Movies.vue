@@ -19,13 +19,15 @@
                 />
         </section>
 
-        <section v-if="modalOpen" class="movieDetails">
-            <span class="material-icons" @click="modalOpen = !modalOpen">close</span>
-            <h2>{{modal[0].title}}</h2>
-            <p class="date"><small>{{modal[0].date}}</small></p>
-            <p>{{modal[0].overview}}</p>
-            <button class="addToFav" @click="addToFav(modal[0].title, modal[0].poster)">Add to favourites</button>
-        </section>
+        <transition name="list">
+            <section v-if="modalOpen" class="movieDetails">
+                <span class="material-icons" @click="modalOpen = !modalOpen">close</span>
+                <h2>{{modal[0].title}}</h2>
+                <p class="date"><small>{{modal[0].date}}</small></p>
+                <p>{{modal[0].overview}}</p>
+                <button class="addToFav" @click="addToFav(modal[0].title, modal[0].poster)">Add to favourites</button>
+            </section>
+        </transition>
 
         <button :disabled="isLoading" @click="getMoreMovies()">Show more movies</button>
     </div>
